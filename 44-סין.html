@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מסע קסום בסין</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://loremflickr.com/1600/600/china');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1, h2 { color: #d32f2f; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        img:hover { transform: scale(1.05); }
+        .map-container {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 5px solid #d32f2f;
+        }
+        .attraction {
+            padding: 15px;
+            border-right: 4px solid #d32f2f;
+            background: #fff5f5;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>גלו את הקסם של סין</h1>
+    <p>מסע בלתי נשכח בין מסורת עתיקה לחדשנות עוצרת נשימה</p>
+</header>
+
+<div class="container">
+    <h2>יעדי חובה למטייל</h2>
+    <div class="grid">
+        <div>
+            <img src="https://loremflickr.com/800/600/beijing" alt="בייג'ינג">
+            <h3>בייג'ינג</h3>
+            <p>העיר האסורה והחומה הגדולה מחכות לכם.</p>
+        </div>
+        <div>
+            <img src="https://loremflickr.com/800/600/shanghai" alt="שנגחאי">
+            <h3>שנגחאי</h3>
+            <p>השילוב המושלם בין גורדי שחקים מודרניים להיסטוריה קולוניאלית.</p>
+        </div>
+        <div>
+            <img src="https://loremflickr.com/800/600/xi'an" alt="שיאן">
+            <h3>שיאן</h3>
+            <p>ביתם של חיילי הטרקוטה המפורסמים.</p>
+        </div>
+    </div>
+
+    <h2>מדריך אטרקציות</h2>
+    <div class="attraction">
+        <h3>החומה הגדולה</h3>
+        <p>אחד מפלאי תבל, חוויה של הליכה בהיסטוריה לאורך נופים עוצרי נשימה.</p>
+    </div>
+    <div class="attraction">
+        <h3>העיר האסורה</h3>
+        <p>מתחם ארמונות ענק בלב בייג'ינג המציג את תפארת הקיסרות הסינית.</p>
+    </div>
+    <div class="attraction">
+        <h3>צבא הטרקוטה</h3>
+        <p>אלפי פסלי חיילים בגודל טבעי השומרים על קברו של הקיסר הראשון.</p>
+    </div>
+
+    <h2>מיקום גיאוגרפי</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14215758.910006767!2d97.12921021798369!3d35.79796071060938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31508e64e5c642c1%3A0x951daa7c349f366f!2z15HXldeq158!5e0!3m2!1siw!2sil!4v1715000000000!5m2!1siw!2sil" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+</div>
+
+</body>
+</html>
